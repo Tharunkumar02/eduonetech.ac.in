@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduonetech Login Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://kit.fontawesome.com/bfe889eafa.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+  <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">
+      <h4>EDUONETECH</h4>
+    </a>
+    <img src="#" alt="" />
+  </nav>
+  <div class="container">
+    <img id="image" src="Images/comp.png" alt="" />
+    <div class="heading">
+      <h2 id="main">We Provide A Way To Learn Java In Depth</h2>
+      <p id="sub">All You Need To Land Your First Job As Java Developer</p>
+    </div>
+    <div id="buttons">
+      <button id="login">LOGIN</button>
+      <button id="signup">SIGN UP</button>
+    </div>
+  </div>
+
+  <div class="container2">
+    <h4>We have your back! Please Sign In</h4>
+    <div class="box box-one">
+      <button id="login-buttons">
+        <img src="Images/Github.png" id="login-img" class="github" alt="" />
+        <span>Sign In with Github</span>
+      </button>
+      <button id="login-buttons">
+        <img src="Images/Google.png" id="login-img" alt="" />
+        <span>Sign In with Google</span>
+      </button>
+    </div>
+    <h5>Or</h5>
+    <div class="box box-two">
+      <form>
+        <span>Email</span>
+        <input type="text" id="input-name" data-signin-email placeholder="Enter your Email" required />
+        <span>Password</span>
+        <input type="password" id="input-password" data-signin-pwd placeholder="Enter your Password" required />
+        <a id="forgot-pwd" href="#">Forgot Password ?</a>
+        <input type="submit" id="submit" class="sign-in" value="Sign In" />
+        <input type="reset" id="submit" class="close" value="Close" />
+      </form>
+    </div>
+  </div>
+
+  <div class="container3">
+    <h4>Happy to see you! Please Sign Up</h4>
+    <div class="box box-three">
+      <button id="login-buttons">
+        <img src="Images/Github.png" id="login-img" class="github" alt="" />
+        <span>Sign Up with Github</span>
+      </button>
+      <button id="login-buttons">
+        <img src="Images/Google.png" id="login-img" alt="" />
+        <span>Sign Up with Google</span>
+      </button>
+    </div>
+    <h5>Or</h5>
+    <div class="box box-four">
+      <form>
+        <span>First Name</span>
+        <input type="text" id="input-name" data-first-name placeholder="Enter your First Name" required />
+        <span>Last Name</span>
+        <input type="text" id="input-name" data-last-name placeholder="Enter your Last Name" required />
+        <span>Email</span>
+        <input type="text" id="input-name" data-email placeholder="Enter your Email" required />
+        <span>Create a Password</span>
+        <input type="password" id="input-password" data-signUp-pwd placeholder="Create your Password" required />
+        <span id="contain"><span>*</span>Password should contain only Letters & Numbers</span>
+        <input type="submit" id="submit" onclick="save()" class="sign-up" value="Sign Up" />
+        <input type="reset" id="submit" class="close" dat-close-button value="Close" />
+      </form>
+    </div>
+  </div>
+
+  <div class="container4">
+    <h1 id="welcome">Welcome Back! Thanks For Joining. Check Where You Have Left.</h1>
+    <div class="confirm">
+    <button type="submit" id="ok"><a href="index.html">OK</a></button>
+    <button type="submit" id="cancel"><a href="#">CANCEL</a></button>
+    </div>
+  </div>
+  
+  <div class="container5">
+    <h1 id="welcome">Hey Buddy! Thanks For Joining. Checkout Our New Courses.</h1>
+    <div class="confirm">
+    <button type="submit" id="ok"><a href="index.html">OK</a></button>
+    <button type="submit" id="cancel"><a href="#">CANCEL</a></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js"></script>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
